@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_bf30f3c883473316fb69c9190adfc2e1 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_bf30f3c883473316fb69c9190adfc2e1" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_bf30f3c883473316fb69c9190adfc2e1 = L.map(
+                "map_bf30f3c883473316fb69c9190adfc2e1",
+                {
+                    center: [-23.506, -46.706],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 14,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_56144b01d07e5b6c975cac75de32b41f = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_56144b01d07e5b6c975cac75de32b41f.addTo(map_bf30f3c883473316fb69c9190adfc2e1);
+        
+    
+            map_bf30f3c883473316fb69c9190adfc2e1.fitBounds(
+                [[-23.515367, -46.689835], [-23.516377, -46.685514], [-23.517458, -46.681635], [-23.4816, -46.67539], [-23.484125, -46.679744], [-23.48673, -46.682207], [-23.49264, -46.685329], [-23.502521, -46.687603], [-23.499417, -46.685989], [-23.495276, -46.684809]],
+                {"padding": [30, 30]}
+            );
+        
+    
+            var marker_7ef141c6fb289d050d7bb706af94c945 = L.marker(
+                [-22.8773542, -47.2280647],
+                {
+}
+            ).addTo(map_bf30f3c883473316fb69c9190adfc2e1);
+        
+    
+            var icon_949e41d2067c114cb7c613f10082f00e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_60c5dd15c54e4df263979f19e028bb08 = L.popup({
+  "maxWidth": 100,
+});
+
+        
+            
+                var html_3193c92f6be15e94c6d90cebbcaf0068 = $(`<div id="html_3193c92f6be15e94c6d90cebbcaf0068" style="width: 100.0%; height: 100.0%;">Estudo aqui!</div>`)[0];
+                popup_60c5dd15c54e4df263979f19e028bb08.setContent(html_3193c92f6be15e94c6d90cebbcaf0068);
+            
+        
+
+        marker_7ef141c6fb289d050d7bb706af94c945.bindPopup(popup_60c5dd15c54e4df263979f19e028bb08)
+        ;
+
+        
+    
+    
+            marker_7ef141c6fb289d050d7bb706af94c945.bindTooltip(
+                `<div>
+                     Local de estudo
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_7ef141c6fb289d050d7bb706af94c945.setIcon(icon_949e41d2067c114cb7c613f10082f00e);
+            
+    
+            var marker_d323ddf6a41debec620bce8b8e48e28a = L.marker(
+                [-23.515367, -46.689835],
+                {
+}
+            ).addTo(map_bf30f3c883473316fb69c9190adfc2e1);
+        
+    
+            var icon_c54f8505ea9ec6881f99e960f3059c0a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_371d22d8fe3c2f43fd665062bd2ffa07 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_d6ea55c760c35a9ca2229b86eb528818 = $(`<div id="html_d6ea55c760c35a9ca2229b86eb528818" style="width: 100.0%; height: 100.0%;">Parada: PEDRO CORAZZA B/C<br>Endereço: R ALBERTINA DE SOUZA / AV. MQ. DE SÃO VICENTE</div>`)[0];
+                popup_371d22d8fe3c2f43fd665062bd2ffa07.setContent(html_d6ea55c760c35a9ca2229b86eb528818);
+            
+        
+
+        marker_d323ddf6a41debec620bce8b8e48e28a.bindPopup(popup_371d22d8fe3c2f43fd665062bd2ffa07)
+        ;
+
+        
+    
+    
+            marker_d323ddf6a41debec620bce8b8e48e28a.bindTooltip(
+                `<div>
+                     PEDRO CORAZZA B/C
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_d323ddf6a41debec620bce8b8e48e28a.setIcon(icon_c54f8505ea9ec6881f99e960f3059c0a);
+            
+    
+            var marker_6de332960c1a3f8a36b22e87398b3f77 = L.marker(
+                [-23.516377, -46.685514],
+                {
+}
+            ).addTo(map_bf30f3c883473316fb69c9190adfc2e1);
+        
+    
+            var icon_fa25d734c27e96e99d1fe7b84bdf3631 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5cbf28123bd1812ea25a8a73423554dd = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_273d5c4ec063de552c3a281f771e4482 = $(`<div id="html_273d5c4ec063de552c3a281f771e4482" style="width: 100.0%; height: 100.0%;">Parada: NACIONAL - B/C<br>Endereço: R FRANCISCO LUIS DE SOUZA JUNIOR/ AV NICOLAS BOER</div>`)[0];
+                popup_5cbf28123bd1812ea25a8a73423554dd.setContent(html_273d5c4ec063de552c3a281f771e4482);
+            
+        
+
+        marker_6de332960c1a3f8a36b22e87398b3f77.bindPopup(popup_5cbf28123bd1812ea25a8a73423554dd)
+        ;
+
+        
+    
+    
+            marker_6de332960c1a3f8a36b22e87398b3f77.bindTooltip(
+                `<div>
+                     NACIONAL - B/C
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_6de332960c1a3f8a36b22e87398b3f77.setIcon(icon_fa25d734c27e96e99d1fe7b84bdf3631);
+            
+    
+            var marker_fdd9fc7a048da68a7ac49fb056a55993 = L.marker(
+                [-23.517458, -46.681635],
+                {
+}
+            ).addTo(map_bf30f3c883473316fb69c9190adfc2e1);
+        
+    
+            var icon_82d5269f20e9d4d32a4d466c63376eec = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1fd7e6e78a0a4c612dc82be8e75320c1 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_8cec2426ae2876b33455a3bd16a203e0 = $(`<div id="html_8cec2426ae2876b33455a3bd16a203e0" style="width: 100.0%; height: 100.0%;">Parada: CETET - B/C<br>Endereço: R FRANCISCO LUIS DE SOUZA JUNIOR/ AV NICOLAS BOER -- CT da Barra Funda (São Paulo FC)</div>`)[0];
+                popup_1fd7e6e78a0a4c612dc82be8e75320c1.setContent(html_8cec2426ae2876b33455a3bd16a203e0);
+            
+        
+
+        marker_fdd9fc7a048da68a7ac49fb056a55993.bindPopup(popup_1fd7e6e78a0a4c612dc82be8e75320c1)
+        ;
+
+        
+    
+    
+            marker_fdd9fc7a048da68a7ac49fb056a55993.bindTooltip(
+                `<div>
+                     CETET - B/C
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_fdd9fc7a048da68a7ac49fb056a55993.setIcon(icon_82d5269f20e9d4d32a4d466c63376eec);
+            
+    
+            var marker_0bc3d7a9f52b09da4b18a8b4a369647b = L.marker(
+                [-23.4816, -46.67539],
+                {
+}
+            ).addTo(map_bf30f3c883473316fb69c9190adfc2e1);
+        
+    
+            var icon_fbe199a0810c2473b2fdb4a009aa565b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_69541c813837944258cc087f1d5b5e99 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_bc942b491479c827ebffd531179f377a = $(`<div id="html_bc942b491479c827ebffd531179f377a" style="width: 100.0%; height: 100.0%;">Parada: EDSON PELLEGRINI B/C<br>Endereço: R MORATO DE OLIVEIRA/ R EDGAR DOS REIS SAMPAIO</div>`)[0];
+                popup_69541c813837944258cc087f1d5b5e99.setContent(html_bc942b491479c827ebffd531179f377a);
+            
+        
+
+        marker_0bc3d7a9f52b09da4b18a8b4a369647b.bindPopup(popup_69541c813837944258cc087f1d5b5e99)
+        ;
+
+        
+    
+    
+            marker_0bc3d7a9f52b09da4b18a8b4a369647b.bindTooltip(
+                `<div>
+                     EDSON PELLEGRINI B/C
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_0bc3d7a9f52b09da4b18a8b4a369647b.setIcon(icon_fbe199a0810c2473b2fdb4a009aa565b);
+            
+    
+            var marker_937c7efbca2f8d17cda925f420d819b9 = L.marker(
+                [-23.484125, -46.679744],
+                {
+}
+            ).addTo(map_bf30f3c883473316fb69c9190adfc2e1);
+        
+    
+            var icon_101447105d3c68876d30cc26a50c9f04 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_77bee3ad160cfe616d42a42d407d2f22 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_9d643debe0f81a79cd0fa9be410f802a = $(`<div id="html_9d643debe0f81a79cd0fa9be410f802a" style="width: 100.0%; height: 100.0%;">Parada: DELFIM MOREIRA B/C<br>Endereço: R CAPITAO JOSE MACHADO / R DELFIM MOREIRA</div>`)[0];
+                popup_77bee3ad160cfe616d42a42d407d2f22.setContent(html_9d643debe0f81a79cd0fa9be410f802a);
+            
+        
+
+        marker_937c7efbca2f8d17cda925f420d819b9.bindPopup(popup_77bee3ad160cfe616d42a42d407d2f22)
+        ;
+
+        
+    
+    
+            marker_937c7efbca2f8d17cda925f420d819b9.bindTooltip(
+                `<div>
+                     DELFIM MOREIRA B/C
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_937c7efbca2f8d17cda925f420d819b9.setIcon(icon_101447105d3c68876d30cc26a50c9f04);
+            
+    
+            var marker_d106628a4faa1877f0d428bd4fceb949 = L.marker(
+                [-23.48673, -46.682207],
+                {
+}
+            ).addTo(map_bf30f3c883473316fb69c9190adfc2e1);
+        
+    
+            var icon_62eaaa45c1cfd81a2c5a263eab00f3b0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5e64782af88d1f0222189a22650cd14b = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_085fb69b02f289f7df82f75ce5b5fbfc = $(`<div id="html_085fb69b02f289f7df82f75ce5b5fbfc" style="width: 100.0%; height: 100.0%;">Parada: PARADA INACIO LEITAO B/C<br>Endereço: PÇA. BENEDICTO DURVAL PESTANA BARBOSA</div>`)[0];
+                popup_5e64782af88d1f0222189a22650cd14b.setContent(html_085fb69b02f289f7df82f75ce5b5fbfc);
+            
+        
+
+        marker_d106628a4faa1877f0d428bd4fceb949.bindPopup(popup_5e64782af88d1f0222189a22650cd14b)
+        ;
+
+        
+    
+    
+            marker_d106628a4faa1877f0d428bd4fceb949.bindTooltip(
+                `<div>
+                     PARADA INACIO LEITAO B/C
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_d106628a4faa1877f0d428bd4fceb949.setIcon(icon_62eaaa45c1cfd81a2c5a263eab00f3b0);
+            
+    
+            var marker_7fbe33969158dc305875d9078834d9bc = L.marker(
+                [-23.49264, -46.685329],
+                {
+}
+            ).addTo(map_bf30f3c883473316fb69c9190adfc2e1);
+        
+    
+            var icon_c7ab46aede2d6875933849569e42c191 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ae08014cea7cd49d73f643ed19a30e5b = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_e39bd111e7df807e1fb7af19efe28f7f = $(`<div id="html_e39bd111e7df807e1fb7af19efe28f7f" style="width: 100.0%; height: 100.0%;">Parada: PARADA BENEDITO GUEDES DE OLIVEIRA B/C<br>Endereço: R EURICO LIMA/ R BENEDITO GUEDES DE OLIVEIRA</div>`)[0];
+                popup_ae08014cea7cd49d73f643ed19a30e5b.setContent(html_e39bd111e7df807e1fb7af19efe28f7f);
+            
+        
+
+        marker_7fbe33969158dc305875d9078834d9bc.bindPopup(popup_ae08014cea7cd49d73f643ed19a30e5b)
+        ;
+
+        
+    
+    
+            marker_7fbe33969158dc305875d9078834d9bc.bindTooltip(
+                `<div>
+                     PARADA BENEDITO GUEDES DE OLIVEIRA B/C
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_7fbe33969158dc305875d9078834d9bc.setIcon(icon_c7ab46aede2d6875933849569e42c191);
+            
+    
+            var marker_d236aa66dd89fefe4ea49542d209a8d0 = L.marker(
+                [-23.502521, -46.687603],
+                {
+}
+            ).addTo(map_bf30f3c883473316fb69c9190adfc2e1);
+        
+    
+            var icon_7b623931572043f72a75b981d0228b97 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f99fbac34d9b4e84528f22a572061c86 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_7be479bdef88aba968c4625a92584edb = $(`<div id="html_7be479bdef88aba968c4625a92584edb" style="width: 100.0%; height: 100.0%;">Parada: RIBEIRO DE MORAIS B/C<br>Endereço: R DOUTOR HEITOR PEREIRA CARRILHO/ R DOUTOR ELVIRO CARRILHO</div>`)[0];
+                popup_f99fbac34d9b4e84528f22a572061c86.setContent(html_7be479bdef88aba968c4625a92584edb);
+            
+        
+
+        marker_d236aa66dd89fefe4ea49542d209a8d0.bindPopup(popup_f99fbac34d9b4e84528f22a572061c86)
+        ;
+
+        
+    
+    
+            marker_d236aa66dd89fefe4ea49542d209a8d0.bindTooltip(
+                `<div>
+                     RIBEIRO DE MORAIS B/C
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_d236aa66dd89fefe4ea49542d209a8d0.setIcon(icon_7b623931572043f72a75b981d0228b97);
+            
+    
+            var marker_e97445fa7fe8708dd3b822224974a86b = L.marker(
+                [-23.499417, -46.685989],
+                {
+}
+            ).addTo(map_bf30f3c883473316fb69c9190adfc2e1);
+        
+    
+            var icon_261c581b3d756b2434b68b9e77305438 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_12d925a195cbd43bb1a71a84c11e8f6d = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_c5f98ecda6ce2dcf6f013fccd8350c17 = $(`<div id="html_c5f98ecda6ce2dcf6f013fccd8350c17" style="width: 100.0%; height: 100.0%;">Parada: DARCI BITTENCOURT B/C<br>Endereço: R DARCI BITTENCOURT/ R BRANCA CABRAL</div>`)[0];
+                popup_12d925a195cbd43bb1a71a84c11e8f6d.setContent(html_c5f98ecda6ce2dcf6f013fccd8350c17);
+            
+        
+
+        marker_e97445fa7fe8708dd3b822224974a86b.bindPopup(popup_12d925a195cbd43bb1a71a84c11e8f6d)
+        ;
+
+        
+    
+    
+            marker_e97445fa7fe8708dd3b822224974a86b.bindTooltip(
+                `<div>
+                     DARCI BITTENCOURT B/C
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_e97445fa7fe8708dd3b822224974a86b.setIcon(icon_261c581b3d756b2434b68b9e77305438);
+            
+    
+            var marker_3aaceeb7576ea29f578b142af23376e3 = L.marker(
+                [-23.495276, -46.684809],
+                {
+}
+            ).addTo(map_bf30f3c883473316fb69c9190adfc2e1);
+        
+    
+            var icon_b6926822bde08dd90fe32be6ce8ee484 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_04a9797782cf170bfffac66467a71987 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_af652edc7fcd857b54b79e2ba8ade375 = $(`<div id="html_af652edc7fcd857b54b79e2ba8ade375" style="width: 100.0%; height: 100.0%;">Parada: SANTA AUTA B/C<br>Endereço: R FRANCISCO LOTUFO/ R SANTA AUTA</div>`)[0];
+                popup_04a9797782cf170bfffac66467a71987.setContent(html_af652edc7fcd857b54b79e2ba8ade375);
+            
+        
+
+        marker_3aaceeb7576ea29f578b142af23376e3.bindPopup(popup_04a9797782cf170bfffac66467a71987)
+        ;
+
+        
+    
+    
+            marker_3aaceeb7576ea29f578b142af23376e3.bindTooltip(
+                `<div>
+                     SANTA AUTA B/C
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_3aaceeb7576ea29f578b142af23376e3.setIcon(icon_b6926822bde08dd90fe32be6ce8ee484);
+            
+</script>
+</html>
